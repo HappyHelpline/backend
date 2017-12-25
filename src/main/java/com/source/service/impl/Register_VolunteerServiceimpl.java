@@ -84,6 +84,7 @@ public class Register_VolunteerServiceimpl implements Register_VolunteerService 
 				json.put("status", "0");
 			}
 		} catch (Exception e) {
+			e.printStackTrace();
 			json.put("msg", "Someting Went Wrong !!!!!");
 			json.put("status", "0");
 			log.info("Register_VolunteerServiceimpl  save\t" + CommonMethod.getDate() + "=" + e);

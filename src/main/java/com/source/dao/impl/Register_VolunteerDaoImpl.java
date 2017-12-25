@@ -33,7 +33,7 @@ public class Register_VolunteerDaoImpl implements Register_VolunteerDao {
 		try {
 			Session session = getsessions.getHibernateUtlis().OpenSessiontransactinal();
 			transaction = session.beginTransaction();
-			session.save(data);
+ 			session.save(data);
 			transaction.commit();
 			getsessions.getHibernateUtlis().CloaseConnectiontMaster();
 			flag = true;
